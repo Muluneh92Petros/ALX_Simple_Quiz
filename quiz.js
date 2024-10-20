@@ -2,7 +2,7 @@
 function checkAnswer() {
     // Correct answer
     const correctAnswer = "4";
-
+    
     // Retrieve the user's answer
     const userAnswer = document.querySelector('input[name="quiz"]:checked');
 
@@ -21,4 +21,3 @@ function checkAnswer() {
 
 // Add Event Listener to the Submit Button
 document.getElementById('submit-answer').addEventListener('click', checkAnswer);
-
