@@ -7,9 +7,9 @@ function checkAnswer() {
     const userAnswer = document.querySelector('input[name="quiz"]:checked');
 
     // Check if an answer was selected
-    if () {
+    if (userAnswer) {
         // Compare the user's answer with the correct answer
-        if () {
+        if (userAnswer.value === correctAnswer) {
             document.getElementById('feedback').textContent = "Correct! Well done.";
         } else {
             document.getElementById('feedback').textContent = "That's incorrect. Try again!";
