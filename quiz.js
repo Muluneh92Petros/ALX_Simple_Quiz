@@ -1,14 +1,8 @@
 // Function Declaration
 function checkAnswer() {
-    // Correct answer stored in an array
-    const correctAnswers = ["4"]; // Using an array for future extensibility
-
-    // Retrieve the user's answer
+    const correctAnswers = ["4"]; 
     const userAnswer = document.querySelector('input[name="quiz"]:checked');
-
-    // Check if an answer was selected
-    if (userAnswer === correctAnswers) {
-        // Compare the user's answer with the correct answers in the array
+      if (userAnswer === correctAnswer) {
         if (correctAnswers.includes(userAnswer.value)) {
             document.getElementById('feedback').textContent = "Correct! Well done.";
         } else {
@@ -18,6 +12,4 @@ function checkAnswer() {
         document.getElementById('feedback').textContent = "Please select an answer.";
     }
 }
-
-// Add Event Listener to the Submit Button
 document.getElementById('submit-answer').addEventListener('click', checkAnswer);
