@@ -9,8 +9,6 @@ function checkAnswer() {
     // Check if an answer was selected
     if (userAnswer) {
         // Compare the user's answer with the correct answers in the array
-        if (correctAnswers.includes(userAnswer.value)) {
-            document.getElementById('feedback').textContent = "Correct! Well done.";
         } else {
             document.getElementById('feedback').textContent = "That's incorrect. Try again!";
         }
