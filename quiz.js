@@ -10,7 +10,7 @@ function checkAnswer() {
     if (userAnswer) {
         // Compare the user's answer with the correct answers in the array
           if (correctAnswers.includes(userAnswer.value)) {
-            document.getElementById('feedback').textContent = "! Well done.";
+            document.getElementById('feedback').textContent === "! Well done.";
           } else {
             document.getElementById('feedback').textContent = "That's incorrect. Try again!";
         }
