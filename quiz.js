@@ -1,17 +1,17 @@
 // Function Declaration
 function checkAnswer() {
     // Correct answer
-    const correctAnswers = ["4"]; // Store correct answers in an array
+    const correctAnswer = "4";
 
     // Retrieve the user's answer
     const userAnswer = document.querySelector('input[name="quiz"]:checked');
 
     // Check if an answer was selected
     if (userAnswer) {
-        // Compare the user's answer with the correct answers in the array
-          if (correctAnswers.includes(userAnswer.value)) {
-            document.getElementById('feedback').textContent === "! Well done.";
-          } else {
+        // Compare the user's answer with the correct answer
+        if () {
+            document.getElementById('feedback').textContent = "Correct! Well done.";
+        } else {
             document.getElementById('feedback').textContent = "That's incorrect. Try again!";
         }
     } else {
